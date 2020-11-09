@@ -1,0 +1,10 @@
+.dialogsItems{
+    border-right: 1px solid #999;
+    flex-basis: 250px;
+}
+.dialog > a{
+    display: block;
+    padding: 0.4em 1em;
+    color: #000;
+    text-decoration: none;
+}

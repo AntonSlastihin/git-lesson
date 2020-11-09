@@ -1,0 +1,17 @@
+.dialogs{
+    height: 100%;
+}
+.dialogsNav{
+    display: flex;
+    height: inherit;
+}
+.dialogsItems{
+    border-right: 1px solid #999;
+    flex-basis: 250px;
+}
+.messages{
+    padding: .4em 1em;
+}
+.messages > * + *{
+    margin-top: 1em;
+}
