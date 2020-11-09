@@ -10,7 +10,7 @@ import Music from './components/Music/Music';
 // import Undefined from "./components/Undefined/Undefined";
 
 
-const App = () => {
+const App = (props) => {
   return (
     <Router>
       <div className='app-wrapper'>
@@ -18,10 +18,16 @@ const App = () => {
         <Navbar />
         <div className="content">
           <Route exact path="/" component={Profile} /> 
-          <Route exact path="/dialogs" component={Dialogs} /> 
+          <Route exact path="/dialogs" render={() => <Dialogs contents={props.contents}/>} /> 
           <Route path="/profile" component={Profile} />
-          <Route path="/news" component={News} />
-          <Route path="/music" component={Music} />
+
+
+
+
+
+          
+          {/* <Route path="/news" component={News} />
+          <Route path="/music" component={Music} /> */}
           {/* <Route component={Undefined}/> */}
         </div>
       </div>
